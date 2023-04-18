@@ -9,26 +9,34 @@
 
 html {
 	// This defines what 1rem is
-	font-size: 62.5%; //1 rem = 10px; 10px/16px = 62.5%
+	font-size: 62.5%;
 	scroll-behavior: smooth;
 
 	@include respond(tab-land) {
 		// width < 1200?
-		font-size: 59%; //1 rem =
+		font-size: 59%;
 	}
 
 	@include respond(tab-port) {
 		// width < 900?
-		font-size: 56%; //1 rem =
+		font-size: 56%;
 	}
 
 	@include respond(big-desktop) {
-		font-size: 65%; //1rem =
+		font-size: 65%;
 	}
 }
 
-body {
+::-webkit-scrollbar {
+	width: 0;
+	background: transparent;
+}
+
+* {
 	box-sizing: border-box;
+}
+
+body {
 	position: relative;
 	line-height: 1.5;
 	font-family: sans-serif;

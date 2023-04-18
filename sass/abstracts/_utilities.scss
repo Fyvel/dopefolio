@@ -45,7 +45,7 @@
 			top: calc(100% + 1.5rem);
 			height: 5px;
 			width: 3rem;
-			background: $themeClrPrimary;
+			background: $themeRed;
 			left: 50%;
 			transform: translateX(-50%);
 			border-radius: $commonBorderRadius;
@@ -89,8 +89,8 @@
 }
 
 .btn {
-	background: #fff;
-	color: #333;
+	background: #333;
+	color: #fff;
 	text-transform: uppercase;
 	letter-spacing: 2px;
 	display: inline-block;
@@ -113,13 +113,13 @@
 	}
 
 	&--theme {
-		background: $themeClrPrimary;
-		color: #fff;
+		background: $themeGold;
+		color: #333;
 	}
 	&--theme-inv {
-		color: $themeClrPrimary;
-		background: #fff;
-		border: 2px solid $themeClrPrimary;
+		color: $themeGold;
+		background: #333;
+		border: 2px solid #333;
 		box-shadow: none;
 		padding: calc(1.5rem - 2px) calc(5rem - 2px);
 	}

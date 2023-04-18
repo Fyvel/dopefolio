@@ -1,3 +1,35 @@
-$themeClrPrimary: #0062b9;
+/* SCSS HEX */
+$cerise: #de3163ff;
+$goldenrod: #ddad31ff;
+$aquamarine: #31ddadff;
+$royal-blue-web-color: #3162ddff;
+
+/* SCSS HSL */
+$cerise: hsla(343, 72%, 53%, 1);
+$goldenrod: hsla(43, 72%, 53%, 1);
+$aquamarine: hsla(163, 72%, 53%, 1);
+$royal-blue-web-color: hsla(223, 72%, 53%, 1);
+
+/* SCSS RGB */
+$cerise: rgba(222, 49, 99, 1);
+$goldenrod: rgba(221, 173, 49, 1);
+$aquamarine: rgba(49, 221, 173, 1);
+$royal-blue-web-color: rgba(49, 98, 221, 1);
+
+/* SCSS Gradient */
+$gradient-top: linear-gradient(0deg, #de3163ff, #ddad31ff, #31ddadff, #3162ddff);
+$gradient-right: linear-gradient(90deg, #de3163ff, #ddad31ff, #31ddadff, #3162ddff);
+$gradient-bottom: linear-gradient(180deg, #de3163ff, #ddad31ff, #31ddadff, #3162ddff);
+$gradient-left: linear-gradient(270deg, #de3163ff, #ddad31ff, #31ddadff, #3162ddff);
+$gradient-top-right: linear-gradient(45deg, #de3163ff, #ddad31ff, #31ddadff, #3162ddff);
+$gradient-bottom-right: linear-gradient(135deg, #de3163ff, #ddad31ff, #31ddadff, #3162ddff);
+$gradient-top-left: linear-gradient(225deg, #de3163ff, #ddad31ff, #31ddadff, #3162ddff);
+$gradient-bottom-left: linear-gradient(315deg, #de3163ff, #ddad31ff, #31ddadff, #3162ddff);
+$gradient-radial: radial-gradient(#de3163ff, #ddad31ff, #31ddadff, #3162ddff);
+
+$themeBlue: $royal-blue-web-color;
+$themeRed: $cerise;
+$themeGold: $goldenrod;
+$themeGreen: $aquamarine;
 
 $commonBorderRadius: 5px;
