@@ -5,15 +5,19 @@
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
-	<title>Dopefolio</title>
-	<meta name="description" content="Portfolio Template for Developer" />
+	<title>Fred Delage</title>
+	<meta name="description" content="full-stack developer portfolio - dopefolio clone" />
 
-	<link rel="stylesheet" href="css/style.css" />
-
+	<link rel="preload" as="style" href="css/style.css" onload="this.onload=null;this.rel='stylesheet'">
+	<noscript>
+		<link rel="stylesheet" href="css/style.css">
+	</noscript>
 	<link rel="preconnect" href="https://fonts.googleapis.com" />
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-	<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700;900&display=swap"
-		rel="stylesheet" />
+	<link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'"
+		href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700;900&display=swap" />
+
+	<script src="./index.js" async></script>
 </head>
 
 <body>
@@ -21,25 +25,23 @@
 		<div class="header__content">
 			<div class="header__logo-container">
 				<div class="header__logo-img-cont">
-					<img src="./assets/png/john-doe.png" alt="Ram Maheshwari Logo Image" class="header__logo-img" />
+					<img src="./assets/png/fred.png" alt="Fred Logo Image" class="header__logo-img" />
 				</div>
-				<span class="header__logo-sub">John Doe</span>
+				<span class="header__logo-sub">Fred Delage</span>
 			</div>
 			<div class="header__main">
 				<ul class="header__links">
 					<li class="header__link-wrapper">
-						<a href="./index.html" class="header__link"> Home </a>
+						<a href="#" class="header__link">Home</a>
 					</li>
 					<li class="header__link-wrapper">
-						<a href="./index.html#about" class="header__link">About </a>
+						<a href="#about" class="header__link">About</a>
 					</li>
 					<li class="header__link-wrapper">
-						<a href="./index.html#projects" class="header__link">
-							Projects
-						</a>
+						<a href="#projects" class="header__link">Projects</a>
 					</li>
 					<li class="header__link-wrapper">
-						<a href="./index.html#contact" class="header__link"> Contact </a>
+						<a href="#contact" class="header__link">Contact</a>
 					</li>
 				</ul>
 				<div class="header__main-ham-menu-cont">
@@ -73,32 +75,35 @@
 	</header>
 	<section class="home-hero">
 		<div class="home-hero__content">
-			<h1 class="heading-primary">Hey, My name is John Doe</h1>
+			<h1 class="heading-primary">Hello there, I'm Fred!</h1>
 			<div class="home-hero__info">
 				<p class="text-primary">
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic facilis
-					tempora explicabo quae quod deserunt eius sapiente solutions for
-					complex problems
+					I'm a <strong>full-stack&nbsp;developer</strong> with a passion for creating
+					<strong>beautiful</strong> and <strong>functional</strong> web&nbsp;experiences that prioritize the
+					<strong>user's&nbsp;needs</strong>. With a <strong>keen&nbsp;eye for&nbsp;design</strong> and a good
+					understanding of <strong>user&nbsp;experience</strong>, I strive to deliver
+					<strong>high-quality</strong>&nbsp;applications that are intuitive, accessible, and&nbsp;engaging."
 				</p>
 			</div>
 			<div class="home-hero__cta">
-				<a href="./#projects" class="btn btn--bg">Projects</a>
+				<a href="#projects" class="btn btn--bg">Projects</a>
 			</div>
 		</div>
 		<div class="home-hero__socials">
 			<div class="home-hero__social">
-				<a href="#" class="home-hero__social-icon-link">
+				<a href="https://github.com/Fyvel" target="_blank" class="home-hero__social-icon-link">
 					<img src="./assets/png/github-ico.png" alt="icon" class="home-hero__social-icon" />
 				</a>
 			</div>
 			<div class="home-hero__social">
-				<a href="#" class="home-hero__social-icon-link">
+				<a href="https://www.linkedin.com/in/fr%C3%A9d%C3%A9ric-delage-576869109/" target="_blank"
+					class="home-hero__social-icon-link">
 					<img src="./assets/png/linkedin-ico.png" alt="icon" class="home-hero__social-icon" />
 				</a>
 			</div>
 		</div>
 		<div class="home-hero__mouse-scroll-cont">
-			<div class="mouse"></div>
+			<div class="mouse" />
 		</div>
 	</section>
 	<section id="about" class="about sec-pad">
@@ -106,8 +111,8 @@
 			<h2 class="heading heading-sec heading-sec__mb-med">
 				<span class="heading-sec__main">About Me</span>
 				<span class="heading-sec__sub">
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic facilis
-					tempora explicabo quae quod deserunt eius sapiente
+					Here you can learn more about my programming skills and get a better understanding of my
+					background and experience.
 				</span>
 			</h2>
 			<div class="about__content">
@@ -115,40 +120,75 @@
 					<h3 class="about__content-title">Get to know me!</h3>
 					<div class="about__content-details">
 						<p class="about__content-details-para">
-							Hey! It's
-							<strong>John Doe</strong>
-							and I'm a <strong> Frontend Web Developer </strong> located in
-							Los Angeles. I've done
-							<strong> remote </strong>
-							projects for agencies, consulted for startups, and collaborated
-							with talented people to create
-							<strong>digital products </strong>
-							for both business and consumer use.
+							With over <strong>7&nbsp;years</strong> of experience as a
+							<strong>full-stack&nbsp;developer</strong>, I've had the
+							opportunity to work on a wide range of projects, from small personal ventures to large-scale
+							enterprise applications. My diverse background spans
+							<strong></strong>multiple&nbsp;industries</strong>, including law
+							firms, financial services companies, property valuation, Australia's largest pizza chain,
+							and Australia's largest early learning provider, I have honed my
+							<strong>ability&nbsp;to&nbsp;adapt</strong> to various types of projects and challenges.
 						</p>
 						<p class="about__content-details-para">
-							I'm a bit of a digital product junky. Over the years, I've used
-							hundreds of web and mobile apps in different industries and
-							verticals. Feel free to
-							<strong>contact</strong> me here.
+							I have a strong taste for following <strong>best&nbsp;practices</strong> and an extensive
+							experience implementing design patterns and adhering to
+							<strong>SOLID&nbsp;principles</strong>.
+						</p>
+						<p class="about__content-details-para">
+							In addition to my professional work, I <strong>explore</strong> new technologies and
+							frameworks through side projects.Whether I'm building a personal project or working within a
+							team, I'm always eager to <strong>learn</strong> and <strong>grow</strong> as a developer.
 						</p>
 					</div>
-					<a href="./#contact" class="btn btn--med btn--theme dynamicBgClr">Contact</a>
+					<a href="#contact" class="btn btn--med btn--theme dynamicBgClr">Contact</a>
 				</div>
 				<div class="about__content-skills">
-					<h3 class="about__content-title">My Skills</h3>
-					<div class="skills">
-						<div class="skills__skill">HTML</div>
-						<div class="skills__skill">CSS</div>
-						<div class="skills__skill">JavaScript</div>
-						<div class="skills__skill">React</div>
-						<div class="skills__skill">SASS</div>
-						<div class="skills__skill">GIT</div>
-						<div class="skills__skill">Shopify</div>
-						<div class="skills__skill">Wordpress</div>
-						<div class="skills__skill">Google ADS</div>
-						<div class="skills__skill">Facebook Ads</div>
-						<div class="skills__skill">Android</div>
-						<div class="skills__skill">IOS</div>
+					<div>
+						<h3 class="about__content-title">Tech stack</h3>
+						<div class="skills">
+							<div class="skills__skill web">PWA</div>
+							<div class="skills__skill web">React</div>
+							<div class="skills__skill web">Svelte</div>
+							<div class="skills__skill web">Angular</div>
+							<div class="skills__skill web">HTML</div>
+							<div class="skills__skill web">CSS</div>
+							<div class="skills__skill web">JavaScript</div>
+							<div class="skills__skill web">TypeScript</div>
+							<div class="skills__skill web">SASS modules</div>
+							<div class="skills__skill web">Material UI</div>
+							<div class="skills__skill web">Tailwind CSS</div>
+							<div class="skills__skill web">.NET Web API</div>
+							<div class="skills__skill web">Express.js</div>
+						</div>
+						<div class="skills">
+							<div class="skills__skill backend">C# .NET Core</div>
+							<div class="skills__skill backend">Azure functions</div>
+							<div class="skills__skill backend">Entity Framework</div>
+							<div class="skills__skill backend">Node.js</div>
+							<div class="skills__skill backend">Cloud functions</div>
+							<div class="skills__skill backend">MongoDB Driver</div>
+						</div>
+						<div class="skills">
+							<div class="skills__skill database">SQL Server</div>
+							<div class="skills__skill database">Cloud firestore</div>
+							<div class="skills__skill database">MongoDB</div>
+						</div>
+						<div class="skills">
+							<div class="skills__skill version-control">GitHub</div>
+							<div class="skills__skill version-control">GitLab</div>
+							<div class="skills__skill version-control">Azure DevOps</div>
+						</div>
+						<div class="skills">
+							<div class="skills__skill cloud">Azure</div>
+							<div class="skills__skill cloud">Google Cloud Platform</div>
+						</div>
+						<div class="skills">
+							<div class="skills__skill testing">Jest</div>
+							<div class="skills__skill testing">Cypress</div>
+							<div class="skills__skill testing">MSTest</div>
+							<div class="skills__skill testing">xUnit</div>
+							<div class="skills__skill testing">Moq</div>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -159,58 +199,62 @@
 			<h2 class="heading heading-sec heading-sec__mb-bg">
 				<span class="heading-sec__main">Projects</span>
 				<span class="heading-sec__sub">
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic facilis
-					tempora explicabo quae quod deserunt eius sapiente
+					Here you can see some of the projects that I created with each project containing its own case
+					study.
 				</span>
 			</h2>
 
 			<div class="projects__content">
 				<div class="projects__row">
 					<div class="projects__row-img-cont">
-						<img src="./assets/jpeg/project-mockup-example.jpeg" alt="Software Screenshot"
+						<img src="./assets/jpeg/the-healthy-serve.jpeg" alt="The Healthy Serve Screenshot"
 							class="projects__row-img" loading="lazy" />
 					</div>
 					<div class="projects__row-content">
-						<h3 class="projects__row-content-title">Project 1</h3>
+						<h3 class="projects__row-content-title">The Healthy Serve</h3>
 						<p class="projects__row-content-desc">
-							Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic
-							facilis tempora, explicabo quae quod deserunt eius sapiente
-							praesentium.
+							The Healthy Serve is a user-friendly PWA that provides users with a wide range of recipes
+							that cater to different dietary needs and preferences. The app is easy to use, search, and
+							navigate, and provides a fast, efficient, and enjoyable experience. Also, it works
+							seamlessly across different devices and platforms.
 						</p>
-						<a href="./project-1.html" class="btn btn--med btn--theme dynamicBgClr" target="_blank">Case
-							Study</a>
+						<a href="./project-1.html" class="btn btn--med btn--theme dynamicBgClr" target="_blank">
+							Case Study
+						</a>
 					</div>
 				</div>
 				<div class="projects__row">
 					<div class="projects__row-img-cont">
-						<img src="./assets/jpeg/project-mockup-example.jpeg" alt="Software Screenshot"
+						<img src="./assets/jpeg/project-mockup-example.jpeg" alt="Gallery-me Screenshot"
 							class="projects__row-img" loading="lazy" />
 					</div>
 					<div class="projects__row-content">
-						<h3 class="projects__row-content-title">Project 2</h3>
+						<h3 class="projects__row-content-title">Gallery-me</h3>
 						<p class="projects__row-content-desc">
-							Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic
-							facilis tempora, explicabo quae quod deserunt eius sapiente
-							praesentium.
+							Gallery-me is an open-source web application that allows authenticated users to create and
+							share their personalized galleries of movies, TV shows, and books. The app uses server-side
+							components to provide a seamless user experience and ensure secure authentication for
+							creating and managing galleries.
 						</p>
-						<a href="./project-2.html" class="btn btn--med btn--theme dynamicBgClr" target="_blank">Case
-							Study</a>
+						<a href="./project-2.html" class="btn btn--med btn--theme dynamicBgClr" target="_blank">
+							Case Study
+						</a>
 					</div>
 				</div>
 				<div class="projects__row">
 					<div class="projects__row-img-cont">
-						<img src="./assets/jpeg/project-mockup-example.jpeg" alt="Software Screenshot"
+						<img src="./assets/jpeg/gpt-messenger-clone.jpeg" alt="Software Screenshot"
 							class="projects__row-img" loading="lazy" />
 					</div>
 					<div class="projects__row-content">
-						<h3 class="projects__row-content-title">Project 3</h3>
+						<h3 class="projects__row-content-title">GPT Messenger clone</h3>
 						<p class="projects__row-content-desc">
-							Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic
-							facilis tempora, explicabo quae quod deserunt eius sapiente
-							praesentium.
+							In a <strong>learn by doing</strong> approach, I re-created a lookalike frontend of Chat GPT
+							official web app because I got excited to try out OpenAI API for text generation.
 						</p>
-						<a href="./project-3.html" class="btn btn--med btn--theme dynamicBgClr" target="_blank">Case
-							Study</a>
+						<a href="./project-3.html" class="btn btn--med btn--theme dynamicBgClr" target="_blank">
+							Case Study
+						</a>
 					</div>
 				</div>
 			</div>
@@ -221,8 +265,7 @@
 			<h2 class="heading heading-sec heading-sec__mb-med">
 				<span class="heading-sec__main heading-sec__main--lt">Contact</span>
 				<span class="heading-sec__sub heading-sec__sub--lt">
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic facilis
-					tempora explicabo quae quod deserunt eius sapiente
+					Feel free to reach out!
 				</span>
 			</h2>
 			<div class="contact__form-container">
@@ -257,32 +300,29 @@
 						<span>Social</span>
 					</h2>
 					<div class="main-footer__social-cont">
-						<a target="_blank" rel="noreferrer" href="#">
+						<a target="_blank" rel="noreferrer" href="https://github.com/Fyvel">
 							<img class="main-footer__icon" src="./assets/png/github-ico.png" alt="icon" />
 						</a>
-						<a target="_blank" rel="noreferrer" href="#">
+						<a target="_blank" rel="noreferrer"
+							href="https://www.linkedin.com/in/fr%C3%A9d%C3%A9ric-delage-576869109/">
 							<img class="main-footer__icon" src="./assets/png/linkedin-ico.png" alt="icon" />
 						</a>
 					</div>
 				</div>
 				<div class="main-footer__row main-footer__row-2">
-					<h4 class="heading heading-sm text-lt">John Doe</h4>
+					<h2 class="heading heading-sm text-lt">Fred Delage</h2>
 					<p class="main-footer__short-desc">
-						Lorem ipsum dolor sit amet consectetur adipisicing elit facilis
-						tempora explicabo quae quod deserunt
+						Full-stack developer with a passion for creating beautiful and functional web experiences!
 					</p>
 				</div>
 			</div>
-
-			<!-- If you give me some credit or shoutout here by linking to my website, then it will be a big thing for me and will help me a lot :) -->
 			<div class="main-footer__lower">
-				&copy; Copyright 2021. Made by
-				<a rel="noreferrer" target="_blank" href="https://rammaheshwari.com">Ram Maheshwari</a>
+				&copy; Copyright 2023. Inspired by good guy <a rel="noreferrer" target="_blank"
+					href="https://www.rammaheshwari.com/">Ram Maheshwari</a> and made with ❤️ by
+				<a rel="noreferrer" target="_blank" href="#">Fred Delage</a>
 			</div>
 		</div>
 	</footer>
-
-	<script src="./index.js" async></script>
 </body>
 
 </html>

@@ -5,15 +5,19 @@
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
-	<title>Case Study of Project 2</title>
-	<meta name="description" content="Case study page of Project" />
+	<title>Case Study - Gallery-me</title>
+	<meta name="description" content="Portfolio - Case Study - Gallery-me" />
 
-	<link rel="stylesheet" href="css/style.css" />
-
+	<link rel="preload" as="style" href="css/style.css" onload="this.onload=null;this.rel='stylesheet'">
+	<noscript>
+		<link rel="stylesheet" href="css/style.css">
+	</noscript>
 	<link rel="preconnect" href="https://fonts.googleapis.com" />
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-	<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700;900&display=swap"
-		rel="stylesheet" />
+	<link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'"
+		href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700;900&display=swap" />
+
+	<script src="./index.js" async></script>
 </head>
 
 <body>
@@ -21,25 +25,23 @@
 		<div class="header__content">
 			<div class="header__logo-container">
 				<div class="header__logo-img-cont">
-					<img src="./assets/png/john-doe.png" alt="Ram Maheshwari Logo Image" class="header__logo-img" />
+					<img src="./assets/png/fred.png" alt="Fred Logo Image" class="header__logo-img" />
 				</div>
-				<span class="header__logo-sub">John Doe</span>
+				<span class="header__logo-sub">Fred Delage</span>
 			</div>
 			<div class="header__main">
 				<ul class="header__links">
 					<li class="header__link-wrapper">
-						<a href="./index.html" class="header__link"> Home </a>
+						<a href="./index.html" class="header__link">Home</a>
 					</li>
 					<li class="header__link-wrapper">
-						<a href="./index.html#about" class="header__link">About </a>
+						<a href="./index.html#about" class="header__link">About</a>
 					</li>
 					<li class="header__link-wrapper">
-						<a href="./index.html#projects" class="header__link">
-							Projects
-						</a>
+						<a href="./index.html#projects" class="header__link">Projects</a>
 					</li>
 					<li class="header__link-wrapper">
-						<a href="./index.html#contact" class="header__link"> Contact </a>
+						<a href="./index.html#contact" class="header__link">Contact</a>
 					</li>
 				</ul>
 				<div class="header__main-ham-menu-cont">
@@ -53,19 +55,19 @@
 			<div class="header__sm-menu-content">
 				<ul class="header__sm-menu-links">
 					<li class="header__sm-menu-link">
-						<a href="./index.html"> Home </a>
+						<a href="./index.html">Home</a>
 					</li>
 
 					<li class="header__sm-menu-link">
-						<a href="./index.html#about"> About </a>
+						<a href="./index.html#about">About</a>
 					</li>
 
 					<li class="header__sm-menu-link">
-						<a href="./index.html#projects"> Projects </a>
+						<a href="./index.html#projects">Projects</a>
 					</li>
 
 					<li class="header__sm-menu-link">
-						<a href="./index.html#contact"> Contact </a>
+						<a href="./index.html#contact">Contact</a>
 					</li>
 				</ul>
 			</div>
@@ -73,12 +75,14 @@
 	</header>
 	<section class="project-cs-hero">
 		<div class="project-cs-hero__content">
-			<h1 class="heading-primary">Project 2</h1>
+			<h1 class="heading-primary">Gallery-me</h1>
 			<div class="project-cs-hero__info">
 				<p class="text-primary">
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos
-					in numquam incidunt earum quaerat cum fuga, atque similique natus
-					nobis sit.
+					Gallery-me is an open-source web application that allows authenticated users to create and share
+					their personalized galleries of movies, TV&nbsp;shows, and books. The app uses server-side
+					components to
+					provide a seamless user experience and ensure secure authentication for creating and managing
+					galleries.
 				</p>
 			</div>
 			<div class="project-cs-hero__cta">
@@ -95,47 +99,51 @@
 				</div>
 				<div class="project-details__content-main">
 					<div class="project-details__desc">
-						<h3 class="project-details__content-title">Project Overview</h3>
+						<h2 class="project-details__content-title">Overview</h2>
 						<p class="project-details__desc-para">
-							Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque
-							alias tenetur minus quaerat aliquid, aut provident blanditiis,
-							deleniti aspernatur ipsam eaque veniam voluptatem corporis vitae
-							mollitia laborum corrupti ullam rem. Lorem ipsum dolor sit amet
-							consectetur adipisicing elit. Neque alias tenetur minus quaerat
-							aliquid, aut provident blanditiis, deleniti aspernatur ipsam
-							eaque veniam voluptatem corporis vitae mollitia laborum corrupti
-							ullam rem?
+							Gallery-me is a user-friendly web app that lets you discover, create, and share your ideal
+							collections of movies, TV&nbsp;shows, and books. With a simple and intuitive interface, you
+							can organize your collections efficiently and with ease. Share your collections with the
+							community to spread the love for your favorite entertainment.
 						</p>
 						<p class="project-details__desc-para">
-							Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque
-							alias tenetur minus quaerat aliquid, aut provident blanditiis,
-							deleniti aspernatur ipsam eaque veniam voluptatem corporis vitae
-							mollitia laborum corrupti ullam rem?
+							Built with the latest version of Next.js (v13), Gallery-me features server-rendered pages
+							and dynamic routing. It uses SWR for seamless data fetching from The&nbsp;Movie&nbsp;Database&nbsp;API, and
+							user authentication is handled with NextAuth. Data is stored and managed on Firestore for
+							efficient management and retrieval.
+						</p>
+						<p class="project-details__desc-para">
+							The front-end UI design is based on Tailwind CSS and Headless UI, offering a fully
+							responsive and accessible PWA. Deployments are made on Vercel for fast and reliable hosting.
 						</p>
 					</div>
 					<div class="project-details__tools-used">
-						<h3 class="project-details__content-title">Tools Used</h3>
+						<h3 class="project-details__content-title">Stack</h3>
 						<div class="skills">
-							<div class="skills__skill">HTML</div>
-							<div class="skills__skill">CSS</div>
-							<div class="skills__skill">JavaScript</div>
+							<div class="skills__skill">PWA</div>
+							<div class="skills__skill">SSR</div>
+							<div class="skills__skill">TypeScript</div>
 							<div class="skills__skill">React</div>
-							<div class="skills__skill">SASS</div>
-							<div class="skills__skill">GIT</div>
-							<div class="skills__skill">Shopify</div>
-							<div class="skills__skill">Wordpress</div>
-							<div class="skills__skill">Google ADS</div>
-							<div class="skills__skill">Facebook Ads</div>
-							<div class="skills__skill">Android</div>
-							<div class="skills__skill">IOS</div>
+							<div class="skills__skill">NextJS</div>
+							<div class="skills__skill">Tailwind CSS</div>
+							<div class="skills__skill">Headless UI</div>
+							<div class="skills__skill">SWR</div>
+							<div class="skills__skill">Cloud Functions</div>
+							<div class="skills__skill">Firebase Authentication</div>
+							<div class="skills__skill">Vercel Deploy</div>
+							<div class="skills__skill">GitHub</div>
 						</div>
 					</div>
 					<div class="project-details__links">
 						<h3 class="project-details__content-title">See Live</h3>
-						<a href="#" class="btn btn--med btn--theme project-details__links-btn" target="_blank">Live
-							Link</a>
-						<a href="#" class="btn btn--med btn--theme-inv project-details__links-btn" target="_blank">Code
-							Link</a>
+						<a href="#" target="_blank" class="btn btn--med btn--theme project-details__links-btn"
+							target="_blank">
+							Live Link
+						</a>
+						<a href="https://github.com/Fyvel/gallery-me"
+							class="btn btn--med btn--theme-inv project-details__links-btn" target="_blank">
+							Code Link
+						</a>
 					</div>
 				</div>
 			</div>
@@ -149,30 +157,29 @@
 						<span>Social</span>
 					</h2>
 					<div class="main-footer__social-cont">
-						<a target="_blank" rel="noreferrer" href="#">
+						<a target="_blank" rel="noreferrer" href="https://github.com/Fyvel">
 							<img class="main-footer__icon" src="./assets/png/github-ico.png" alt="icon" />
 						</a>
-						<a target="_blank" rel="noreferrer" href="#">
+						<a target="_blank" rel="noreferrer"
+							href="https://www.linkedin.com/in/fr%C3%A9d%C3%A9ric-delage-576869109/">
 							<img class="main-footer__icon" src="./assets/png/linkedin-ico.png" alt="icon" />
 						</a>
 					</div>
 				</div>
 				<div class="main-footer__row main-footer__row-2">
-					<h4 class="heading heading-sm text-lt">John Doe</h4>
+					<h2 class="heading heading-sm text-lt">Fred Delage</h2>
 					<p class="main-footer__short-desc">
-						Lorem ipsum dolor sit amet consectetur adipisicing elit facilis
-						tempora explicabo quae quod deserunt
+						Full-stack developer with a passion for creating beautiful and functional web experiences!
 					</p>
 				</div>
 			</div>
-
 			<div class="main-footer__lower">
-				&copy; Copyright 2021. Made by
-				<a rel="noreferrer" target="_blank" href="https://rammaheshwari.com">Ram Maheshwari</a>
+				&copy; Copyright 2023. Inspired by good guy <a rel="noreferrer" target="_blank"
+					href="https://www.rammaheshwari.com/">Ram Maheshwari</a> and made with ❤️ by
+				<a rel="noreferrer" target="_blank" href="#">Fred Delage</a>
 			</div>
 		</div>
 	</footer>
-	<script src="./index.js"></script>
 </body>
 
 </html>
