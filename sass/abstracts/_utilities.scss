@@ -36,7 +36,7 @@
 			color: #fff;
 			&::after {
 				content: "";
-				background: #fff !important;
+				background: $themeGreen !important;
 			}
 		}
 		&::after {
@@ -59,9 +59,9 @@
 	&__sub {
 		display: block;
 		text-align: center;
-		color: #777;
+		color: #333;
 		font-size: 2rem;
-		font-weight: 500;
+		font-weight: 600;
 		max-width: 80rem;
 		margin: auto;
 		line-height: 1.6;

@@ -10,5 +10,29 @@
 		border-radius: $commonBorderRadius;
 		font-weight: 600;
 		color: #333;
+
+		&.web {
+			background: $web;
+		}
+		
+		&.backend {
+			background: $backend;
+		}
+		
+		&.database {
+			background: $database;
+		}
+		
+		&.cloud {
+			background: $cloud;
+		}
+		
+		&.version-control {
+			background: $version-control;
+		}
+
+		&.testing {
+			background: $testing;
+		}
 	}
 }
