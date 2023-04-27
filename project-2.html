@@ -25,7 +25,7 @@
 		<div class="header__content">
 			<div class="header__logo-container">
 				<div class="header__logo-img-cont">
-					<img src="./assets/png/fred.png" alt="Fred Logo Image" class="header__logo-img" />
+					<img loading="eager" src="./assets/fred.webp" alt="Fred Logo Image" class="header__logo-img" />
 				</div>
 				<span class="header__logo-sub">Fred Delage</span>
 			</div>
@@ -45,8 +45,9 @@
 					</li>
 				</ul>
 				<div class="header__main-ham-menu-cont">
-					<img src="./assets/svg/ham-menu.svg" alt="hamburger menu" class="header__main-ham-menu" />
-					<img src="./assets/svg/ham-menu-close.svg" alt="hamburger menu close"
+					<img loading="lazy" src="./assets/svg/ham-menu.svg" alt="hamburger menu"
+						class="header__main-ham-menu" />
+					<img loading="lazy" src="./assets/svg/ham-menu-close.svg" alt="hamburger menu close"
 						class="header__main-ham-menu-close d-none" />
 				</div>
 			</div>
@@ -86,7 +87,7 @@
 				</p>
 			</div>
 			<div class="project-cs-hero__cta">
-				<a href="#" class="btn btn--bg" target="_blank">Live Link</a>
+				<a href="https://gallery-me.vercel.app/" class="btn btn--bg" target="_blank">Live Link</a>
 			</div>
 		</div>
 	</section>
@@ -94,8 +95,18 @@
 		<div class="main-container">
 			<div class="project-details__content">
 				<div class="project-details__showcase-img-cont">
-					<img src="./assets/jpeg/project-mockup-example.jpeg" alt="Project Image"
-						class="project-details__showcase-img" />
+					<picture>
+						<source type="image/webp" srcSet="./assets/projects/gallery-me_x936.webp"
+							media="(min-width: 1200px)" />
+						<source type="image/webp" srcSet="./assets/projects/gallery-me_x828.webp"
+							media="(min-width: 900px)" />
+						<source type="image/webp" srcSet="./assets/projects/gallery-me_x718.webp"
+							media="(min-width: 600px)" />
+						<source type="image/webp" srcSet="./assets/projects/gallery-me_x552.webp"
+							media="(min-width: 375px)" />
+						<img loading="lazy" src="./assets/projects/gallery-me_x345.webp" alt="Project Image"
+							class="project-details__showcase-img" />
+					</picture>
 				</div>
 				<div class="project-details__content-main">
 					<div class="project-details__desc">
@@ -108,7 +119,8 @@
 						</p>
 						<p class="project-details__desc-para">
 							Built with the latest version of Next.js (v13), Gallery-me features server-rendered pages
-							and dynamic routing. It uses SWR for seamless data fetching from The&nbsp;Movie&nbsp;Database&nbsp;API, and
+							and dynamic routing. It uses SWR for seamless data fetching from
+							The&nbsp;Movie&nbsp;Database&nbsp;API, and
 							user authentication is handled with NextAuth. Data is stored and managed on Firestore for
 							efficient management and retrieval.
 						</p>
@@ -136,8 +148,8 @@
 					</div>
 					<div class="project-details__links">
 						<h3 class="project-details__content-title">See Live</h3>
-						<a href="#" target="_blank" class="btn btn--med btn--theme project-details__links-btn"
-							target="_blank">
+						<a href="https://gallery-me.vercel.app/"
+							class="btn btn--med btn--theme project-details__links-btn" target="_blank">
 							Live Link
 						</a>
 						<a href="https://github.com/Fyvel/gallery-me"
@@ -158,11 +170,11 @@
 					</h2>
 					<div class="main-footer__social-cont">
 						<a target="_blank" rel="noreferrer" href="https://github.com/Fyvel">
-							<img class="main-footer__icon" src="./assets/png/github-ico.png" alt="icon" />
+							<img class="main-footer__icon" src="./assets/github-ico.webp" alt="icon" />
 						</a>
 						<a target="_blank" rel="noreferrer"
 							href="https://www.linkedin.com/in/fr%C3%A9d%C3%A9ric-delage-576869109/">
-							<img class="main-footer__icon" src="./assets/png/linkedin-ico.png" alt="icon" />
+							<img class="main-footer__icon" src="./assets/linkedin-ico.webp" alt="icon" />
 						</a>
 					</div>
 				</div>

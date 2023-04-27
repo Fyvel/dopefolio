@@ -25,7 +25,7 @@
 		<div class="header__content">
 			<div class="header__logo-container">
 				<div class="header__logo-img-cont">
-					<img src="./assets/png/fred.png" alt="Fred Logo Image" class="header__logo-img" />
+					<img loading="eager" src="./assets/fred.webp" alt="Fred Logo Image" class="header__logo-img" />
 				</div>
 				<span class="header__logo-sub">Fred Delage</span>
 			</div>
@@ -45,8 +45,9 @@
 					</li>
 				</ul>
 				<div class="header__main-ham-menu-cont">
-					<img src="./assets/svg/ham-menu.svg" alt="hamburger menu" class="header__main-ham-menu" />
-					<img src="./assets/svg/ham-menu-close.svg" alt="hamburger menu close"
+					<img loading="lazy" src="./assets/svg/ham-menu.svg" alt="hamburger menu"
+						class="header__main-ham-menu" />
+					<img loading="lazy" src="./assets/svg/ham-menu-close.svg" alt="hamburger menu close"
 						class="header__main-ham-menu-close d-none" />
 				</div>
 			</div>
@@ -55,19 +56,19 @@
 			<div class="header__sm-menu-content">
 				<ul class="header__sm-menu-links">
 					<li class="header__sm-menu-link">
-						<a href="./index.html"> Home </a>
+						<a href="/">Home</a>
 					</li>
 
 					<li class="header__sm-menu-link">
-						<a href="./index.html#about"> About </a>
+						<a href="/#about">About</a>
 					</li>
 
 					<li class="header__sm-menu-link">
-						<a href="./index.html#projects"> Projects </a>
+						<a href="/#projects">Projects</a>
 					</li>
 
 					<li class="header__sm-menu-link">
-						<a href="./index.html#contact"> Contact </a>
+						<a href="/#contact">Contact</a>
 					</li>
 				</ul>
 			</div>
@@ -92,13 +93,13 @@
 		<div class="home-hero__socials">
 			<div class="home-hero__social">
 				<a href="https://github.com/Fyvel" target="_blank" class="home-hero__social-icon-link">
-					<img src="./assets/png/github-ico.png" alt="icon" class="home-hero__social-icon" />
+					<img loading="lazy" src="./assets/github-ico.webp" alt="icon" class="home-hero__social-icon" />
 				</a>
 			</div>
 			<div class="home-hero__social">
 				<a href="https://www.linkedin.com/in/fr%C3%A9d%C3%A9ric-delage-576869109/" target="_blank"
 					class="home-hero__social-icon-link">
-					<img src="./assets/png/linkedin-ico.png" alt="icon" class="home-hero__social-icon" />
+					<img loading="lazy" src="./assets/linkedin-ico.webp" alt="icon" class="home-hero__social-icon" />
 				</a>
 			</div>
 		</div>
@@ -199,16 +200,25 @@
 			<h2 class="heading heading-sec heading-sec__mb-bg">
 				<span class="heading-sec__main">Projects</span>
 				<span class="heading-sec__sub">
-					Here you can see some of the projects that I created with each project containing its own case
-					study.
+					Here you can explore some of my projects, each with its own detailed case&nbsp;study.
 				</span>
 			</h2>
 
 			<div class="projects__content">
 				<div class="projects__row">
 					<div class="projects__row-img-cont">
-						<img src="./assets/jpeg/the-healthy-serve.jpeg" alt="The Healthy Serve Screenshot"
-							class="projects__row-img" loading="lazy" />
+						<picture>
+							<source type="image/webp" srcSet="./assets/projects/the-healthy-serve_x718.webp"
+								media="(min-width: 1200px)" />
+							<source type="image/webp" srcSet="./assets/projects/the-healthy-serve_x828.webp"
+								media="(min-width: 900px)" />
+							<source type="image/webp" srcSet="./assets/projects/the-healthy-serve_x718.webp"
+								media="(min-width: 600px)" />
+							<source type="image/webp" srcSet="./assets/projects/the-healthy-serve_x552.webp"
+								media="(min-width: 375px)" />
+							<img loading="lazy" src="./assets/projects/the-healthy-serve_x345.webp"
+								alt="The Healthy Serve Screenshot" class="projects__row-img" />
+						</picture>
 					</div>
 					<div class="projects__row-content">
 						<h3 class="projects__row-content-title">The Healthy Serve</h3>
@@ -218,15 +228,25 @@
 							navigate, and provides a fast, efficient, and enjoyable experience. Also, it works
 							seamlessly across different devices and platforms.
 						</p>
-						<a href="./project-1.html" class="btn btn--med btn--theme dynamicBgClr" target="_blank">
+						<a href="./project-1" class="btn btn--med btn--theme dynamicBgClr" target="_blank">
 							Case Study
 						</a>
 					</div>
 				</div>
 				<div class="projects__row">
 					<div class="projects__row-img-cont">
-						<img src="./assets/jpeg/project-mockup-example.jpeg" alt="Gallery-me Screenshot"
-							class="projects__row-img" loading="lazy" />
+						<picture>
+							<source type="image/webp" srcSet="./assets/projects/gallery-me_x718.webp"
+								media="(min-width: 1200px)" />
+							<source type="image/webp" srcSet="./assets/projects/gallery-me_x828.webp"
+								media="(min-width: 900px)" />
+							<source type="image/webp" srcSet="./assets/projects/gallery-me_x718.webp"
+								media="(min-width: 600px)" />
+							<source type="image/webp" srcSet="./assets/projects/gallery-me_x552.webp"
+								media="(min-width: 375px)" />
+							<img loading="lazy" src="./assets/projects/gallery-me_x345.webp" alt="Gallery-me Screenshot"
+								class="projects__row-img" loading="lazy" />
+						</picture>
 					</div>
 					<div class="projects__row-content">
 						<h3 class="projects__row-content-title">Gallery-me</h3>
@@ -236,15 +256,25 @@
 							components to provide a seamless user experience and ensure secure authentication for
 							creating and managing galleries.
 						</p>
-						<a href="./project-2.html" class="btn btn--med btn--theme dynamicBgClr" target="_blank">
+						<a href="./project-2" class="btn btn--med btn--theme dynamicBgClr" target="_blank">
 							Case Study
 						</a>
 					</div>
 				</div>
 				<div class="projects__row">
 					<div class="projects__row-img-cont">
-						<img src="./assets/jpeg/gpt-messenger-clone.jpeg" alt="Software Screenshot"
-							class="projects__row-img" loading="lazy" />
+						<picture>
+							<source type="image/webp" srcSet="./assets/projects/gpt-messenger-clone_x718.webp"
+								media="(min-width: 1200px)" />
+							<source type="image/webp" srcSet="./assets/projects/gpt-messenger-clone_x828.webp"
+								media="(min-width: 900px)" />
+							<source type="image/webp" srcSet="./assets/projects/gpt-messenger-clone_x718.webp"
+								media="(min-width: 600px)" />
+							<source type="image/webp" srcSet="./assets/projects/gpt-messenger-clone_x552.webp"
+								media="(min-width: 375px)" />
+							<img loading="lazy" src="./assets/projects/gpt-messenger-clone_x345.webp"
+								alt="Software Screenshot" class="projects__row-img" loading="lazy" />
+						</picture>
 					</div>
 					<div class="projects__row-content">
 						<h3 class="projects__row-content-title">GPT Messenger clone</h3>
@@ -252,7 +282,7 @@
 							In a <strong>learn by doing</strong> approach, I re-created a lookalike frontend of Chat GPT
 							official web app because I got excited to try out OpenAI API for text generation.
 						</p>
-						<a href="./project-3.html" class="btn btn--med btn--theme dynamicBgClr" target="_blank">
+						<a href="./project-3" class="btn btn--med btn--theme dynamicBgClr" target="_blank">
 							Case Study
 						</a>
 					</div>
@@ -301,11 +331,11 @@
 					</h2>
 					<div class="main-footer__social-cont">
 						<a target="_blank" rel="noreferrer" href="https://github.com/Fyvel">
-							<img class="main-footer__icon" src="./assets/png/github-ico.png" alt="icon" />
+							<img class="main-footer__icon" src="./assets/github-ico.webp" alt="icon" />
 						</a>
 						<a target="_blank" rel="noreferrer"
 							href="https://www.linkedin.com/in/fr%C3%A9d%C3%A9ric-delage-576869109/">
-							<img class="main-footer__icon" src="./assets/png/linkedin-ico.png" alt="icon" />
+							<img class="main-footer__icon" src="./assets/linkedin-ico.webp" alt="icon" />
 						</a>
 					</div>
 				</div>
