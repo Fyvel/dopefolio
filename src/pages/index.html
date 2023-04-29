@@ -2,78 +2,18 @@
 <html lang="en">
 
 <head>
-	<meta charset="UTF-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
 	<title>Fred Delage</title>
 	<meta name="description" content="full-stack developer portfolio - dopefolio clone" />
-	<link rel="shortcut icon" href="./assets/favicon.svg" type="image/x-icon" />
-	<link rel="preload" as="style" href="css/style.css" onload="this.onload=null;this.rel='stylesheet'">
-	<noscript>
-		<link rel="stylesheet" href="css/style.css">
-	</noscript>
-	<link rel="preconnect" href="https://fonts.googleapis.com" />
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-	<link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'"
-		href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700;900&display=swap" />
-
-	<script src="./index.js" async></script>
+	<!-- inject:head -->
+	<!-- endinject -->
 </head>
 
 <body>
-	<header class="header">
-		<div class="header__content">
-			<div class="header__logo-container">
-				<div class="header__logo-img-cont">
-					<img loading="eager" src="./assets/fred.webp" alt="Fred Logo Image" class="header__logo-img" />
-				</div>
-				<span class="header__logo-sub">Fred Delage</span>
-			</div>
-			<div class="header__main">
-				<ul class="header__links">
-					<li class="header__link-wrapper">
-						<a href="#" class="header__link">Home</a>
-					</li>
-					<li class="header__link-wrapper">
-						<a href="#about" class="header__link">About</a>
-					</li>
-					<li class="header__link-wrapper">
-						<a href="#projects" class="header__link">Projects</a>
-					</li>
-					<li class="header__link-wrapper">
-						<a href="#contact" class="header__link">Contact</a>
-					</li>
-				</ul>
-				<div class="header__main-ham-menu-cont">
-					<img loading="lazy" src="./assets/svg/ham-menu.svg" alt="hamburger menu"
-						class="header__main-ham-menu" />
-					<img loading="lazy" src="./assets/svg/ham-menu-close.svg" alt="hamburger menu close"
-						class="header__main-ham-menu-close d-none" />
-				</div>
-			</div>
-		</div>
-		<div class="header__sm-menu">
-			<div class="header__sm-menu-content">
-				<ul class="header__sm-menu-links">
-					<li class="header__sm-menu-link">
-						<a href="/">Home</a>
-					</li>
-
-					<li class="header__sm-menu-link">
-						<a href="/#about">About</a>
-					</li>
-
-					<li class="header__sm-menu-link">
-						<a href="/#projects">Projects</a>
-					</li>
-
-					<li class="header__sm-menu-link">
-						<a href="/#contact">Contact</a>
-					</li>
-				</ul>
-			</div>
-		</div>
+	<header id="header" class="header">
+		<!-- inject:header -->
+		<!-- endinject -->
 	</header>
+
 	<section class="home-hero">
 		<div class="home-hero__content">
 			<h1 class="heading-primary">Hello there, I'm Fred!</h1>
@@ -228,7 +168,7 @@
 							navigate, and provides a fast, efficient, and enjoyable experience. Also, it works
 							seamlessly across different devices and platforms.
 						</p>
-						<a href="./project-1" class="btn btn--med btn--theme dynamicBgClr" target="_blank">
+						<a href="./project-1.html" class="btn btn--med btn--theme dynamicBgClr">
 							Case Study
 						</a>
 					</div>
@@ -256,7 +196,7 @@
 							components to provide a seamless user experience and ensure secure authentication for
 							creating and managing galleries.
 						</p>
-						<a href="./project-2" class="btn btn--med btn--theme dynamicBgClr" target="_blank">
+						<a href="./project-2.html" class="btn btn--med btn--theme dynamicBgClr">
 							Case Study
 						</a>
 					</div>
@@ -282,7 +222,7 @@
 							In a <strong>learn by doing</strong> approach, I re-created a lookalike frontend of Chat GPT
 							official web app because I got excited to try out OpenAI API for text generation.
 						</p>
-						<a href="./project-3" class="btn btn--med btn--theme dynamicBgClr" target="_blank">
+						<a href="./project-3.html" class="btn btn--med btn--theme dynamicBgClr">
 							Case Study
 						</a>
 					</div>
@@ -298,60 +238,22 @@
 					Feel free to reach out!
 				</span>
 			</h2>
-			<div class="contact__form-container">
-				<form action="#" class="contact__form">
-					<div class="contact__form-field">
-						<label class="contact__form-label" for="name">Name</label>
-						<input required placeholder="Enter Your Name" type="text" class="contact__form-input"
-							name="name" id="name" />
-					</div>
-					<div class="contact__form-field">
-						<label class="contact__form-label" for="email">Email</label>
-						<input required placeholder="Enter Your Email" type="text" class="contact__form-input"
-							name="email" id="email" />
-					</div>
-					<div class="contact__form-field">
-						<label class="contact__form-label" for="message">Message</label>
-						<textarea required cols="30" rows="10" class="contact__form-input"
-							placeholder="Enter Your Message" name="message" id="message"></textarea>
-					</div>
-					<button type="submit" class="btn btn--theme contact__btn">
-						Submit
-					</button>
-				</form>
+			<div class="contact__section">
+				<a href="mailto:frederic.delage@hotmail.fr?subject=Touch%20base&body=Hello%20there!%0A%0A%0ATake%20care"
+					class="btn btn--bg">
+					Send me an email
+				</a>
+				<span class="contact__text">OR</span>
+				<a href="sms:+61410078519&body=Hello%20there!%0A%0A%0ATake%20care" class="btn btn--bg">
+					Send me a message
+				</a>
 			</div>
 		</div>
 	</section>
-	<footer class="main-footer">
-		<div class="main-container">
-			<div class="main-footer__upper">
-				<div class="main-footer__row main-footer__row-1">
-					<h2 class="heading heading-sm main-footer__heading-sm">
-						<span>Social</span>
-					</h2>
-					<div class="main-footer__social-cont">
-						<a target="_blank" rel="noreferrer" href="https://github.com/Fyvel">
-							<img class="main-footer__icon" src="./assets/github-ico.webp" alt="icon" />
-						</a>
-						<a target="_blank" rel="noreferrer"
-							href="https://www.linkedin.com/in/fr%C3%A9d%C3%A9ric-delage-576869109/">
-							<img class="main-footer__icon" src="./assets/linkedin-ico.webp" alt="icon" />
-						</a>
-					</div>
-				</div>
-				<div class="main-footer__row main-footer__row-2">
-					<h2 class="heading heading-sm text-lt">Fred Delage</h2>
-					<p class="main-footer__short-desc">
-						Full-stack developer with a passion for creating beautiful and functional web experiences!
-					</p>
-				</div>
-			</div>
-			<div class="main-footer__lower">
-				&copy; Copyright 2023. Inspired by good guy <a rel="noreferrer" target="_blank"
-					href="https://www.rammaheshwari.com/">Ram Maheshwari</a> and made with ❤️ by
-				<a rel="noreferrer" target="_blank" href="#">Fred Delage</a>
-			</div>
-		</div>
+
+	<footer id="footer" class="main-footer">
+		<!-- inject:footer -->
+		<!-- endinject -->
 	</footer>
 </body>
 
