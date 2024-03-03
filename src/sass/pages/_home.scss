@@ -128,8 +128,7 @@
 }
 
 .projects {
-	background: linear-gradient(to bottom, rgba($themeBlue, 0.4), rgba($themeBlue, 0.4)),
-	url(/assets/svg/common-bg.svg);
+	background: linear-gradient(to bottom, rgba($themeBlue, 0.4), rgba($themeBlue, 0.4)), url(/assets/svg/common-bg.svg);
 	&__row {
 		display: grid;
 		grid-template-columns: 1.5fr 1fr;
@@ -194,8 +193,7 @@
 }
 
 .contact {
-	background: linear-gradient(to right, rgba($themeBlue, 0.8), rgba($themeBlue, 0.8)),
-		url(/assets/svg/common-bg.svg);
+	background: linear-gradient(to right, rgba($themeBlue, 0.8), rgba($themeBlue, 0.8)), url(/assets/svg/common-bg.svg);
 	background-size: cover;
 	background-position: center;
 
@@ -210,7 +208,7 @@
 		}
 	}
 
-	&__text{
+	&__text {
 		color: #eee;
 		font-size: 1.5rem;
 		font-weight: 600;
@@ -223,5 +221,49 @@
 		@include respond(phone) {
 			width: 100%;
 		}
+	}
+}
+
+.install-app {
+	position: fixed;
+	right: 3rem;
+	bottom: 3rem;
+	border-radius: 5px;
+	padding: 1rem;
+	box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.15);
+	transform: rotate(45deg);
+
+	&:hover {
+		animation: wobble .5s ease;
+	}
+
+	&__img {
+		width: 4rem;
+		height: 4rem;
+		transform: rotate(-45deg);
+}
+}
+
+@keyframes wobble {
+	0% {
+		transform: rotate(45deg);
+	}
+	15% {
+		transform: rotate(35deg);
+	}
+	30% {
+		transform: rotate(53deg) scale(1.1);
+	}
+	45% {
+		transform: rotate(37deg) scale(1.1);
+	}
+	60% {
+		transform: rotate(50deg) scale(1.1);
+	}
+	75% {
+		transform: rotate(42deg);
+	}
+	100% {
+		transform: rotate(45deg);
 	}
 }

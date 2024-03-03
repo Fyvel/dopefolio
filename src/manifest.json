@@ -1,0 +1,87 @@
+{
+	"name": "Fred Delage 👨‍💻",
+	"short_name": "Fred Delage 👨‍💻",
+	"start_url": "/?source=pwa",
+	"display_override": [
+		"window-controls-overlay"
+	],
+	"display": "standalone",
+	"description": "My portfolio as a simple PWA",
+	"lang": "en",
+	"theme_color": "#3162dd",
+	"background_color": "#3162dd",
+	"orientation": "portrait",
+	"icons": [
+		{
+			"src": "https://www.pwabuilder.com/assets/icons/icon_512.png",
+			"sizes": "512x512",
+			"type": "image/png",
+			"purpose": "maskable"
+		},
+		{
+			"src": "https://www.pwabuilder.com/assets/icons/icon_192.png",
+			"sizes": "192x192",
+			"type": "image/png",
+			"purpose": "any"
+		}
+	],
+	"screenshots": [
+		{
+			"src": "https://www.pwabuilder.com/assets/screenshots/screen1.png",
+			"sizes": "1630x918",
+			"type": "image/png",
+			"description": "A screenshot of the home page",
+			"form_factor": "wide"
+		},
+		{
+			"src": "https://www.pwabuilder.com/assets/screenshots/screen1.png",
+			"sizes": "1630x918",
+			"type": "image/png",
+			"description": "A screenshot of the home page",
+			"form_factor": "narrow"
+		}
+	],
+	"related_applications": [],
+	"prefer_related_applications": false,
+	"shortcuts": [
+		{
+			"name": "🏠 Home",
+			"icons": [
+				{
+					"src": "https://www.pwabuilder.com/assets/icons/icon_96.png",
+					"sizes": "96x96"
+				}
+			],
+			"url": "/?source=pwa",
+			"description": "Home page"
+		},
+		{
+			"name": "🧪 Projects",
+			"icons": [
+				{
+					"src": "https://www.pwabuilder.com/assets/icons/icon_96.png",
+					"sizes": "96x96"
+				}
+			],
+			"url": "/#projects?source=pwa",
+			"description": "Home page"
+		},
+		{
+			"name": "🤙 Contact",
+			"icons": [
+				{
+					"src": "https://www.pwabuilder.com/assets/icons/icon_96.png",
+					"sizes": "96x96"
+				}
+			],
+			"url": "/#contact?source=pwa",
+			"description": "Home page"
+		}
+	],
+	"protocol_handlers": [
+		{
+			"protocol": "mailto",
+			"url": "/newEmail?to=%s"
+		}
+	]
+}

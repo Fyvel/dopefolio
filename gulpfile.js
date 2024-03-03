@@ -39,8 +39,14 @@ function html() {
 }
 
 function js() {
-	return gulp.src('src/index.js')
+	return gulp.src('src/*.js')
 		.pipe(gulp.dest('dist/js'))
+		.pipe(browserSync.stream())
+}
+
+function json() {
+	return gulp.src('src/*.json')
+		.pipe(gulp.dest('dist/'))
 		.pipe(browserSync.stream())
 }
 
@@ -66,7 +72,7 @@ function cleanDist() {
 		.pipe(clean())
 }
 
-exports.build = gulp.series(cleanDist, gulp.parallel(html, css, js, assets))
+exports.build = gulp.series(cleanDist, gulp.parallel(html, css, js, json, assets))
 
 function serve() {
 	browserSync.init({
@@ -81,11 +87,13 @@ gulp.task('watch', function () {
 	gulp.watch('src/**/*.html', gulp.series(html))
 	gulp.watch('src/**/*.scss', gulp.series(css))
 	gulp.watch('src/**/*.js', gulp.series(js))
+	gulp.watch('src/**/*.json', gulp.series(json))
 	gulp.watch('src/assets/**/*', gulp.series(assets))
 })
 
 gulp.task('css', css)
 gulp.task('js', js)
+gulp.task('json', json)
 gulp.task('html', html)
 gulp.task('assets', assets)
 gulp.task('clean', cleanDist)
